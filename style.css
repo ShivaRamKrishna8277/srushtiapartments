@@ -47,9 +47,11 @@ body{
 
 /* hero */
 #heroSection{
-    background: url(assets/images/heroBg.png);
+    background: black;
+    background-image: url(assets/images/heroBg.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
 }
 
 .featureWrapper{
