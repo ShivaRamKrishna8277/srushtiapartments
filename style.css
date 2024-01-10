@@ -50,7 +50,7 @@ body{
     background: black;
     background-image: url(assets/images/heroBg.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: auto;
     background-position: center;
 }
 
