@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srushti Apartments</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="modal fade" id="BookNowForm" tabindex="-1" aria-labelledby="BookNowFormLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="BookNowFormLabel">Book Room</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form action="">
+                <div class="input-group mb-3">
+                    <select name="roomType" id="roomType" class="form-control">
+                        <option value="default" selected disabled>-- Select Room Type --</option>
+                        <option value="3bhk">Family Retreat Suite (2BHK)</option>
+                        <option value="3bhk">Dual Delight Suite (2BHK)</option>
+                        <option value="3bhk">Solo Serenity Suite (1BHK)</option>
+                    </select>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="number" class="form-control" placeholder="Mobile Number" aria-label="Mobile Number">
+                </div>
+                <div class="input-group mb-3">
+                    <input type="number" class="form-control" placeholder="No of Rooms" aria-label="Mobile Number">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="w-100">
+                        <label for="" class="ps-1 h6">Check In</label><br>
+                        <input type="date" class="form-control" aria-label="Check In">
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="w-100">
+                        <label for="" class="ps-1 h6">Check Out</label><br>
+                        <input type="date" class="form-control" aria-label="Check In">
+                    </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn w-100 bg-black text-white">Save changes</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <header>
+        <div id="navBar" class="position-absolute w-100 d-flex justify-content-center py-4">
+            <ul id="navItemsWrappper" class="d-flex w-50 justify-content-between align-items-center text-white p-0 m-0 my-2">
+                <li class="navItems"><a href="#roomsSection">Book Now</a></li>
+                <li class="navItems"><a href="#contactUs">Contact Us</a></li>
+                <li class="navItems"><a href="#footer">Address</a></li>
+                <li class="navItems"><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+        <div id="menuIcon" class="position-absolute w-100 d-flex justify-content-between align-items-center py-4 my-2 px-4">
+            <p class="h6 text-white m-0 p-0">SRUSTHI APARTMENTS</p>
+            <img src="assets/images/menu.png" id="openMenu" alt="" class="img-fluid" style="width: 30px; cursor: pointer;" onclick="Menu('0%','hidden')">
+        </div>
+        <div id="navMobile" class="bg-white z-5 position-absolute vh-100 w-100 top-0 start-0 pt-5">
+            <ul id="navItemsWrappper-mb" class="d-flex flex-column gap-5" style="width: 90%;">
+                <li class="navItemsMobile navLinks h2 d-flex justify-content-between align-items-center"><a href="#roomsSection" class="text-black">Book Now</a><img src="assets/images/close.png" id="closeMenu" alt="" class="img-fluid" style="width: 25px; cursor: pointer;" onclick="Menu('-100%','auto')"></li>
+                <li class="navItemsMobile navLinks h2"><a href="#contactUs" class="text-black">Contact Us</a></li>
+                <li class="navItemsMobile navLinks h2"><a href="#footer" class="text-black">Address</a></li>
+                <li class="navItemsMobile navLinks h2"><a href="gallery.html" class="text-black">Gallery</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div id="heroSection" class="vh-100 w-100 d-flex align-items-center">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col d-flex align-items-center justify-content-center flex-column text-white gap-3">
+                        <img src="assets/images/LOGO-white.svg" alt="Logo" id="heroLogo" class="img-fluid m-auto" style="width: 25%;">
+                        <p class="h1 fw-bold">SRUSTHI APARTMENTS</p>
+                        <p class="h4 fw-normal text-center">Unwind in Comfort, Stay in Style: Your Home Away from Home.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="aboutUs" class="px-3 px-lg-5 mx-1 mx-lg-5 my-5">
+            <p class="h2 fw-bold p-0 mb-3">ABOUT US:</p>
+            <p class="h5 my-4">Welcome to Srushti Apartments, where your journey begins in a realm of comfort, elegance, and personalized hospitality. Nestled <b>Sonnappa Layout, Bhuvaneshwari Nagar, H A Farm Post, Bengaluru</b>, Srushti Apartments is not just a place to stay; it's a retreat crafted to make your travel experience exceptional.</p>
+            <p class="h5">At Srushti Apartments, our story is one of passion for creating a home away from home. Established with a vision to redefine hospitality, we embarked on a mission to offer more than just accommodation.</p>
+        </div>
+        <div id="featuresSection" class="container-fluid bg-black px-3 px-lg-5 py-5 pt-2">
+            <div class="row mx-lg-5 m-0 g-5 justify-content-between">
+                <div class="featureWrapper col-12 col-lg-5">
+                    <img src="assets/images/comfort.png" alt="" class="img-fluid">
+                    <p class="h5">Our construction is rooted in thoughtful design, ensuring a sustainable and environmentally conscious dwelling that exudes the comfort of home.</p>
+                </div>
+                <div class="featureWrapper col-12 col-lg-5">
+                    <img src="assets/images/family.png" alt="" class="img-fluid">
+                    <p class="h5">Step into spaces designed to seamlessly mold to your lifestyle, providing the comfort of a place to call your own. It feels like home because it's crafted for you.</p>
+                </div>
+            </div>
+        </div>
+        <div id="roomsSection" class="container-fluid my-5 p-0 py-5 pb-2">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3">
+                <div class="col" data-bs-toggle="modal" data-bs-target="#BookNowForm">
+                    <img src="assets/images/frs.png" alt="" class="img-fluid bookroomImgs">
+                </div>
+                <div class="col" data-bs-toggle="modal" data-bs-target="#BookNowForm">
+                    <img src="assets/images/dds.png" alt="" class="img-fluid bookroomImgs">
+                </div>
+                <div class="col" data-bs-toggle="modal" data-bs-target="#BookNowForm">
+                    <img src="assets/images/sss.png" alt="" class="img-fluid bookroomImgs">
+                </div>
+            </div>
+        </div>
+        <div id="amenitiesSection" class="py-5 px-2 bg-black d-flex justify-content-center align-items-center flex-column">
+            <p class="h1 fw-bolder text-white">BUILDING AMENITIES</p>
+            <ul class="m-0 d-lg-flex justify-content-center align-items-center gap-5 mt-5 p-0">
+                <li>
+                    <ul class="">
+                        <li class="amenitiWrapper"><img src="assets/images/amenities/Elevator.png" alt="" class="img-fluid"><p class="h4">Elevator Access to all Suites</p></li>
+                        <li class="amenitiWrapper"><img src="assets/images/amenities/Parking.png" alt="" class="img-fluid"><p class="h4">Parking Facility</p></li>
+                        <li class="amenitiWrapper"><img src="assets/images/amenities/Mute.png" alt="" class="img-fluid"><p class="h4">Sound proof Suites</p></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="">
+                        <li class="amenitiWrapper"><img src="assets/images/amenities/Building.png" alt="" class="img-fluid"><p class="h4">Newly Constructed Building</p></li>
+                        <li class="amenitiWrapper"><img src="assets/images/amenities/Housekeeping.png" alt="" class="img-fluid"><p class="h4">Impeccable Cleaning Services</p></li>
+                        <li class="amenitiWrapper"><img src="assets/images/amenities/Wi-Fi.png" alt="" class="img-fluid"><p class="h4">High-Speed Wi-Fi for Seamless Connectivity</p></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="contactUs" class="d-flex flex-column justify-content-center align-items-center my-5 py-5">
+            <p class="h1 fw-bolder">Contact Us</p>
+            <form action="">
+                <input type="text" name="name" id="name" placeholder="Name"><br>
+                <input type="tel" name="mobile" id="mobile" placeholder="Mobile"><br>
+                <textarea name="querry" id="querry" cols="30" rows="4" placeholder="querry"></textarea><br>
+                <input type="submit" value="Submit" id="submitQuerry">
+            </form>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="container-fluid bg-black py-5 px-5">
+            <div class="row g-5 mx-5 text-white row-cols-1 row-cols-md-2">
+                <div class="col d-flex justify-content-center align-items-center">
+                    <img src="assets/images/footer-logo.svg" alt="" class="img-fluid">
+                </div>
+                <div class="col">
+                    <p class="h1">Address</p>
+                    <p class="h5 fw-normal">#166 & 167, 5th Cross, Sonnappa Layout, Bhuvaneshwari Nagar, H A Farm Post, Bengaluru, Karnataka, India - 560024 <br><br>+91 9611014918, +91 6360605575 <br>Srushticonst65@gmail.com</p>
+                    <p class="mt-4">Follow us on - <a href=""><img src="assets/images/Instagram.png" alt=""></a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

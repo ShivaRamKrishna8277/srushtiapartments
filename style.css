@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+    list-style: none;
+    text-decoration: none !important;
+}
+body{
+    overflow-x: hidden !important;
+}
+
+/* navbar */
+.navItems a{
+    color: white;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+.navItems a:hover{
+    text-decoration: underline !important;
+}
+#menuIcon{
+    display: none !important;
+}
+@media(max-width: 1080px){
+    #navItemsWrappper{
+        width: 80% !important;
+    }
+}
+@media(max-width: 630px){
+    #navBar{
+        display: none !important;
+    }
+    #menuIcon{
+        display: flex !important;
+    }
+    #heroLogo{
+        width: 50% !important;
+    }
+}
+#navMobile{
+    transform: translateX(-100%);
+    transition: transform 0.1s ease-in-out;
+}
+
+/* hero */
+#heroSection{
+    background: url(assets/images/heroBg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.featureWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    gap: 20px;
+}
+.featureWrapper p{
+    font-weight: normal;
+    line-height: 35px;
+}
+
+/* rooms */
+#roomsSection .row .col{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.bookroomImgs{
+    width: 70%;
+}
+
+/* amenities */
+.amenitiWrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.amenitiWrapper img{
+    width: 30px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+.amenitiWrapper p{
+    margin: 0;
+    color: white;
+}
+
+/* contact us */
+#contactUs form{
+    width: 40%;
+}
+#contactUs form input,#contactUs form textarea{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    resize: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+#submitQuerry{
+    border: none !important;
+    background: #000;
+    color: #fff;
+}
+@media(max-width:960px){
+    #contactUs form{
+        width: 80% !important;
+    }
+}
+
+/* footer */
