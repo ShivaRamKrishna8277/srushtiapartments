@@ -116,5 +116,27 @@ body{
         width: 80% !important;
     }
 }
+@media(max-width:300px){
+    .navTitle{
+        font-size: 13px !important;
+    }
+    #openMenu{
+        height: 12px !important;
+        width: auto !important;
+    }
+    .heroTitle{
+        font-size: 20px !important;
+    }
+    .heroSubTitle{
+        font-size: 15px !important;
+    }
+    #contactUs form{
+        width: 90% !important;
+    }
+    #submitQuerry{
+        padding: 10px !important;
+    }
+}
+
 
 /* footer */
