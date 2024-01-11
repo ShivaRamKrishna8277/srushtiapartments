@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dual Delight Suite</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="rooms.css">
+    <script src="https://kit.fontawesome.com/6b08050b6d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Book Now</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <a href="https://wa.me/919611014918?text=Hello!%20I'm%20interested%20in%20booking%20a%20room%20at%20Srushti%20Apartments." class="whatsappButton"><img src="assets/images/whatsapp.png" alt=""><span>Chat on Whatsapp</span></a>
+                <button class="btn btn-primary w-100 mobilenoBtn"><i class="fa-solid fa-phone"></i> 9611014918</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <header class="bg-black py-2 px-lg-4 px-2 container-fluid">
+        <div class="row g-0">
+            <div class="col-md-8 col-12 mx-auto">
+                <div class="navbar" class="d-flex justify-content-between align-items-center">
+                    <p class="h4 text-white navTitle">Srusthi Apartments</p>
+                    <a href="index.html" class="text-white navTitle">Home</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-3">
+        <div class="mainContent container-fluid p-0">
+            <div class="row g-0">
+                <div class="col-12 col-md-8 mx-auto px-lg-4 px-2">
+                    <div class="roomImg">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="assets/room-imgs/2bhk/2.jpeg" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/room-imgs/2bhk/1.jpeg" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/room-imgs/2bhk/3.jpeg" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/room-imgs/2bhk/4.jpeg" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/room-imgs/2bhk/5.jpeg" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/room-imgs/2bhk/6.jpeg" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/room-imgs/2bhk/7.jpeg" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/room-imgs/2bhk/8.jpeg" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/room-imgs/2bhk/9.jpeg" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/room-imgs/2bhk/10.jpeg" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/room-imgs/2bhk/11.jpeg" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/room-imgs/2bhk/12.jpeg" alt=""></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="title mt-3">
+                        <p class="h1 text-black">Dual Delight Suite</p>
+                    </div>
+                    <div class="desc mt-2">
+                        <p class="text-dark-emphasis h6">Discover the perfect harmony of space and intimacy in our 2BHK Suite. Ideal for families or groups, this suite boasts two bedrooms, a welcoming living area, and a fully-appointed kitchen. Enjoy the convenience of a home-like atmosphere, where every detail is crafted to enhance your comfort and create lasting memories.</p>
+                    </div>
+                    <div class="btns container-fluid my-4">
+                        <div class="row g-3">
+                            <div class="col-12 col-lg-6 p-0 pe-0 pe-lg-2">
+                                <p class="h6 fw-medium text-white bg-black text-center py-3"><span style="font-family: sans-serif;">₹ </span>1,999</p>
+                            </div>
+                            <div class="col-12 col-lg-6 p-0 ps-0 ps-lg-2">
+                                <p class="h6 fw-medium text-white bg-black text-center py-3" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal">Book Now</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid p-0 text-center">
+                        <div class="row row-cols-1 row-cols-lg-auto g-3">
+                          <div class="col amenitiesWrapper"><img src="assets/images/amenities/Parking dark.png" alt="" class="img-fluid amenitiesImg"><span> Parking Available</span></div>
+                          <div class="col amenitiesWrapper"><img src="assets/images/amenities/Wi-Fi dark.png" alt="" class="img-fluid amenitiesImg"><span> Wifi Available</span></div>
+                          <div class="col amenitiesWrapper"><img src="assets/images/amenities/TV dark.png" alt="" class="img-fluid amenitiesImg"><span> Smart TV Available</span></div>
+                          <div class="col amenitiesWrapper"><img src="assets/images/amenities/celling fan dark.png" alt="" class="img-fluid amenitiesImg"><span> Celling Fan Available</span></div>
+                          <div class="col amenitiesWrapper"><img src="assets/images/amenities/ac dark.png" alt="" class="img-fluid amenitiesImg"><span class="notAvailable"> Air Conditioner Not Available</span></div>
+                          <div class="col amenitiesWrapper"><img src="assets/images/amenities/Microwave dark.png" alt="" class="img-fluid amenitiesImg"><span class="notAvailable"> Microwave Oven Not Available</span></div>
+                          <div class="col amenitiesWrapper"><img src="assets/images/amenities/iron dark.png" alt="" class="img-fluid amenitiesImg"><span> Iron Available</span></div>
+                          <div class="col amenitiesWrapper"><img src="assets/images/amenities/Washing Machine dark.png" alt="" class="img-fluid amenitiesImg"><span> Washing Machine Available</span></div>
+                          <div class="col amenitiesWrapper"><img src="assets/images/amenities/camera dark.png" alt="" class="img-fluid amenitiesImg"><span> Security Camers Available</span></div>
+                          <div class="col amenitiesWrapper"><img src="assets/images/amenities/Gas Stove dark.png" alt="" class="img-fluid amenitiesImg"><span> Gas Stove Available</span></div>
+                          <div class="col amenitiesWrapper"><img src="assets/images/amenities/heater dark.png" alt="" class="img-fluid amenitiesImg"><span> Heater Available</span></div>
+                          <div class="col amenitiesWrapper"><img src="assets/images/amenities/Kettle dark.png" alt="" class="img-fluid amenitiesImg"><span> Kettle Available</span></div>
+                          <div class="col amenitiesWrapper"><img src="assets/images/amenities/Cutlery dark.png" alt="" class="img-fluid amenitiesImg"><span> Cutlery Available</span></div>
+                          <div class="col amenitiesWrapper"><img src="assets/images/amenities/Cooker dark.png" alt="" class="img-fluid amenitiesImg"><span> Cooker Available</span></div>
+                          <div class="col amenitiesWrapper"><img src="assets/images/amenities/dining table dark.png" alt="" class="img-fluid amenitiesImg"><span> Dining Table Available</span></div>
+                          <div class="col amenitiesWrapper"><img src="assets/images/amenities/Elevator dark.png" alt="" class="img-fluid amenitiesImg"><span> Lift Available</span></div>
+                          <div class="col amenitiesWrapper"><img src="assets/images/amenities/Smoking dark.png" alt="" class="img-fluid amenitiesImg"><span> Smoking Allowed</span></div>
+                          <div class="col amenitiesWrapper"><img src="assets/images/amenities/Calendar dark.png" alt="" class="img-fluid amenitiesImg"><span> Long Term Stay Allowed</span></div>
+                          <div class="col amenitiesWrapper"><img src="assets/images/amenities/Housekeeping dark.png" alt="" class="img-fluid amenitiesImg"><span> Cleaning Available</span></div>
+                          <div class="col amenitiesWrapper"><img src="assets/images/amenities/service boy dark.png" alt="" class="img-fluid amenitiesImg"><span> Service Boy Available</span></div>
+                          <div class="col amenitiesWrapper"><img src="assets/images/amenities/cupboard dark.png" alt="" class="img-fluid amenitiesImg"><span> Clothes Storage Available</span></div>
+                          <div class="col amenitiesWrapper"><img src="assets/images/amenities/pets dark.png" alt="" class="img-fluid amenitiesImg"><span> Pets Allowed</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="rooms.js"></script>
+</body>
+</html>
